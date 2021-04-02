@@ -2,32 +2,34 @@
 
 ## Description
 
-### Positive Test scenario 1: Login into Contorion website
+## Positive Test scenario 1: Login into Contorion website
 
 > Validate if the user logs in successfully if the credentials entered are correct
 
+## Getting started
 
-# Getting started
-
-## Clone the repository
+### Clone the repository
 
 ```bash
 git clone https://github.com/korneliia/auto-test-contorion.git
+cd auto-test-contorion
 ```
 
-## Install required dependencies
+### Install dependencies
 
 ```bash
 php composer.phar install
 ```
 
-## Start the Selenium Server
+If you have problems with installing packages, check this issue: [install ext-zip for Mac](https://stackoverflow.com/questions/58290566/install-ext-zip-for-mac)
+
+### Start the Selenium Server
 
 ```bash
 java -jar selenium-server-standalone-3.141.59.jar
 ```
 
-## Run automated tests locally
+### Run automated tests locally
 
 From the project root execute:
 
@@ -41,7 +43,12 @@ or
 php vendor/bin/codecept run --debug
 ```
 
-## Technogies used
+### Successful test run
+
+![test-run](./test-run.png)
+
+### Technologies used
+
 - Composer - a Dependency Manager for PHP
 - Selenium WebDriver
 - Chrome driver
